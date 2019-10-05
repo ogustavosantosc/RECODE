@@ -1,0 +1,117 @@
+// FUNÇÃO ANINHADA
+/* 
+
+Sintaxe da função aninhada
+
+declarar_variável = nome(x, y)
+
+function funcaoExterna(a, b) {
+   function funcaoInterna(x) {
+    return lógica_interna ou mensagem
+  }
+  return lógica_externa ou mensagem
+}
+
+*/
+
+/*
+let a = add(2, 3);  
+
+function add(a, b) {
+  function number(x) {
+    return x * x;
+  }
+  return number(a) + number(b);
+}
+
+console.log(a);
+*/
+
+// Crie uma função aninhada subtração com divisão
+
+let c = Number(2, 1);
+
+function sub(a, b) {
+  function number(x) {
+    return x / x;
+  }
+  return number(a) - number(b);
+}
+
+console.log(c);
+
+
+// aula = 01/10
+
+/* Síntaxe da função
+
+function nome(parâmetro) {
+  corpo da função
+    return
+}
+
+*/
+
+// NOTAÇÃO POR DECLARAÇÃO
+
+function helloWorld() {
+  return document.write(`Hello World`);
+}
+
+helloWorld();
+
+//NOTAÇÃO - DEFININDO UMA FUNÇÃO COMO VARIÁVEL
+
+let mult = function(x) {
+  return x * x
+}
+console.log(mult(4));
+
+/* função recursiva: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Funções */
+
+// Função recursiva - é uma função que invoca a sí próprio
+// algorítmo para verificar se um número é par
+/*
+let x = 1;
+
+function par(x) {
+  if (x % 2 == 0) return `O número ${x} é par`;
+  else return `O número ${x} é ímpar`;
+}
+
+document.write(par(0));
+*/
+
+// CRIE UM ALGORÍTMO DE POTÊNCIA
+/*
+function potencia(base, expoente) {
+  if (expoente == 0)
+    return 1;
+  else 
+    return base * potencia(base, expoente - 1);
+}
+
+document.write(potencia(2, 3));
+*/
+
+// FAÇA OUTRA CALCULADORA USANDO FUNÇÃO
+
+function soma(x, y) {
+  return document.write(`${x} + ${y} = ${x + y}`);
+}
+
+function subtracao(x, y) {
+  return document.write(x - y, "<br/>");
+}
+
+function mult(x, y) {
+  return document.write(x - y, "<br/>");
+}
+
+function divisao(x, y) {
+  return document.write(x / y);
+}
+
+Number(soma(2, 2));
+Number(mult(2, 2));
+Number(divisao(2, 2));

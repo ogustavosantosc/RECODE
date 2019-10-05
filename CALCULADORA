@@ -1,0 +1,136 @@
+/*let a = Number(prompt("Digite um número"));
+let b = Number(prompt("Digite outro número"));
+let op = parseInt(
+  prompt(
+    "Digite uma opção \n 1 para soma \n 2 para subtração \n 3 para multiplicar \n 4 para dividir \n 5 para potenciação"
+  )
+);
+*/
+/*
+switch (op) {
+  case (op = 1):
+    document.write(`${a} + ${b} = ${a + b}`);
+    break;
+  case (op = 2):
+    document.write(`${a} - ${b} = ${a - b}`);
+    break;
+  case (op = 3):
+    document.write(`${a} x ${b} = ${a * b}`);
+    break;
+  case (op = 4):
+    document.write(`${a} / ${b} = ${a / b}`);
+  case (op = 5):
+    document.write(`${a} ^ ${b} = ${a ** b}`);
+}
+
+*/
+
+/* Usando o if
+if (op === 1) {
+  document.write(`${a} + ${b} = ${a + b}`);
+} else if (op == 2) {
+  document.write(` ${a} - ${b} = ${a - b}`);
+} else if (op == 3) {
+  document.write(`${a} x ${b} = ${a * b}`);
+} else if (op == 4) {
+  document.write(`${a} / ${b} = ${a / b}`);
+} else if (op == 5) {
+  document.write(`${a} ^ ${b} = ${a ** b}`);
+} else {
+  document.write("Opção inválida!");
+}
+
+*/
+
+// Usando função
+
+let op = parseInt(
+  prompt(
+    "Qual tipo de calculadora você deseja? 1- Calculadora aritmética 2- calculadora científica"
+  )
+);
+
+let n1 = Number(prompt("Insira um número"));
+let n2 = Number(prompt("Insira outro número"));
+
+function soma(n1, n2) {
+  return document.write(`${n1} + ${n2} = ${n1 + n2} <br/>`);
+}
+
+function subtraction(n1, n2) {
+  return document.write(`${n1} - ${n2} = ${n1 - n2} <br/>`);
+}
+
+function multiplication(n1, n2) {
+  return document.write(`${n1} x ${n2} = ${n1 * n2} <br/>`);
+}
+
+function division(n1, n2) {
+  return document.write(`${n1} / ${n2} = ${n1 / n2} <br/>`);
+}
+
+
+// _______________________________________________________
+
+
+/* função recursiva: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Funções */
+
+// Função recursiva - é uma função que invoca a sí próprio
+// algorítmo para verificar se um número é par
+/*
+let x = 1;
+
+function par(x) {
+  if (x % 2 == 0) return `O número ${x} é par`;
+  else return `O número ${x} é ímpar`;
+}
+
+document.write(par(0));
+*/
+
+// CRIE UM ALGORÍTMO DE POTÊNCIA
+/*
+function potencia(base, expoente) {
+  if (expoente == 0)
+    return 1;
+  else 
+    return base * potencia(base, expoente - 1);
+}
+
+document.write(potencia(2, 3));
+*/
+
+// FAÇA OUTRA CALCULADORA USANDO FUNÇÃO
+
+let n1 = Number(prompt("Insira um número"));
+let n2 = Number(prompt("Insira outro número"));
+
+function soma(x, y) {
+  return document.write(`${x} + ${y} = ${x + y} <br/>`);
+}
+
+function subtracao(x, y) {
+  return document.write(`${x} - ${y} = ${x - y} <br/>`);
+}
+
+function mult(x, y) {
+  return document.write(`${x} x ${y} = ${x * y} <br/>`);
+}
+
+function divisao(x, y) {
+  return document.write(`${x} / ${y} = ${(x / y).toFixed(2)} <br/>`);
+}
+
+function potencia(x, y) {
+  return document.write(`${x} ^(${y}) = ${x ** y}`);
+}
+
+function raiz(n1) {
+  return document.write(n1);
+}
+
+soma(n1, n2);
+subtracao(n1, n2);
+mult(n1, n2);
+divisao(n1, n2);
+potencia(n1, n2);

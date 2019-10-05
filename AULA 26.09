@@ -1,0 +1,186 @@
+ 
+// IO = Input Output
+// output - saída de dados
+// input - entrada de dados
+
+// output - Developer : Saída de dados somente para o programador ver
+let a = 1;
+console.log(a);
+
+//--------------------------------
+// output - Users : Saída de dados para o usuário ver. Um anúncio por exemplo
+let b = 2;
+alert(b);
+
+//--------------------------------
+//input - UI - browser
+
+// Joga a string (O texto) para o corpo da página. Sendo assim o texto ficará visível na página
+document.write("Testando\n");
+
+//---------------------------------
+//input - Users
+/*o prompt faz aparecer um anúncio na tela para inserir um valor
+à variável nome*/
+
+let nome = prompt("Digite o seu nome: ");
+document.write(nome);
+
+//-----------------------------------
+//A variável ficará visível na página
+let b = 5;
+if (b === 5) {
+  document.write(` O valor da variável é ${b} `);
+}
+
+// _______________________________________________________________
+
+// Remova as barras de comentários dos códigos
+// Estrutura de repetição - for
+
+// Sintaxe básico do FOR
+
+/*let a = 'Declarar a variável'
+for(valor_inicial; valor_final; incremento ou decremento){
+  saída de dados
+}
+*/
+
+/*Estrutura for com quebra de linha <br/>*/
+
+/*let x = 0;
+for (x = 1; x <= 10; x++) {
+  document.write(`O valor de X é: ${x}<br/>`);
+}
+*/
+
+//Exercício
+//Faça um loop for que apareça 15 vezes o seu nome
+
+/*let a = 0;
+
+let nome = prompt("Digite o seu nome: ");
+for (a = 1; a <= 15; a++) {
+  document.write(`O seu nome é: ${nome} <br/>`);
+}
+*/
+
+// ES6 PERMITE QUE VOCÊ PODE DECLARAR A VARIÁVEL DENTRO DO PARÂMETRO
+
+/*
+for (let a = 1; a <= 15; a++){;
+  document.write(`${a} - George<br/>`);
+}
+*/
+
+// Estrutura while
+
+/*let contador = 0;
+let nome = prompt("Digite seu nome: ");
+
+while (contador <= 15) {
+  contador++;
+  document.write(`Seu nome é ${nome} <br/>`);
+}
+*/
+
+//-------------------------------------------
+/*exercicio 1 crie um algorítmo para 
+dizer se o número é par ou ímpar*/
+
+// exercicio usando if
+/*let n = prompt("Digite um número: ")
+
+if (n % 2 === 0) {
+  alert("é par")
+} else {
+  alert("é impar")
+}
+*/
+
+// ---------------------------------------------
+
+// exercicio usando switch FALTA TERMINAR
+/*
+let n = propt("Insira um número: ");
+let expressao = n % 0
+
+switch (expressao) {
+  case (expressao == 0):
+    console.log("é par");
+    break;
+  default:
+    console.log("é impar");
+}
+*/
+
+
+//_________________________________________________
+//Switch-Case
+
+let a = 1;
+let b = 2;
+
+switch(a < b){
+  case(a < b):
+    console.log("A é menor que B");
+    break
+  default:
+    console.log("Outros");
+}
+//____________________________________________________
+
+
+let x = prompt("Qual o melhor time do Rio?");
+switch (x) {
+  case ("vasco", "Vasco da Gama"):
+    alert("-/-");
+  case "Botafogo":
+    alert("Errou");
+    break;
+  case "Flamengo":
+    alert("Acertou");
+  default:
+    alert("Outros");
+}
+
+
+//----------------------------------------------
+/*Média do Aluno. 
+
+Crie um algotitmo para saber qual a situação do aluno.
+Tendo como base 3 notas:
+
+n1, n2, n3
+
+Descobrir a média aritmética e descobrir a situação
+do aluno.
+
+mensagem - "aprovado" - nota >= 7
+mensagem - "Recuperação" - nota >= 5
+mensagem - "Reprovado" - < 5
+
+No navegador ( saída de dados) deve aparecer a nota 
+do aluno + a mensagem.
+*/
+
+// Exercicio usando o if
+
+
+let nota1 = parseInt(prompt("Insira a primeira nota: "));
+let nota2 = parseInt(prompt("Insira a segunda nota: "));
+let nota3 = parseInt(prompt("Insira a terceira nota: "));
+let media = (nota1 + nota2 + nota3) / 3;
+
+if (media >= 7) {
+  console.log(`A média do aluno é ${media}`);
+  console.log("Aprovado");
+} else if (media >= 5) {
+  console.log(`A média do aluno é ${media}`);
+  console.log("Recuperação");
+} else {
+  console.log(`A média do aluno é ${media}`);
+  console.log("Reprovado");
+}
+
+//______________________________________________________________________

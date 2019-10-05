@@ -1,0 +1,74 @@
+//01 - escopo de variavel global
+var animal = "cat";
+console.log(animal);
+
+//02 - escopo de variavel local
+function sayAnimal() {
+  var cachorro = "buldog";
+  console.log(cachorro);
+}
+sayAnimal(); // invoca a função
+
+var city = "rj";
+console.log(city);
+
+//04 - variavel com mesmo nome
+var city = "niteroi";
+console.log(city);
+
+//05 - criando variavel com let
+//let city = "niteroi";
+//console.log(city);
+
+//06 - Corrigindo
+let cidade = "caxias";
+console.log(cidade);
+
+//07 - criando uma constante
+const valor = 20;
+console.log(valor);
+
+//const valor = 50;
+//console.log(valor);
+
+//09 - const + object
+//const NESSE caso não é um valor imutavel
+const george = {
+  name: "Bezerra",
+  age: 100
+};
+console.log(george);
+
+//Tornar objeto imutavel
+//object.freeze(george);
+
+//testando se altera
+george.age = 10;
+
+//tipos de dados
+let a = 1;
+let b = 3.14;
+let c = "caracteres";
+
+let d = Boolean(true); //Booleano
+
+if (d) {
+  console.log(d);
+}
+
+//Concatenação de String
+
+// 1 - Processo Antigo
+
+const rio = {
+  live: "RJ",
+  love: "Arraial do Cabo"
+};
+
+//antes do S6
+const text = "Eu moro em " + rio.live + "E sou apaixonado por" + rio.love + "!";
+console.log(text);
+
+//Depois do S6
+const newtext = `Eu moro em ${rio.live} E sou apaixonado por ${rio.love} !`;
+console.log(newtext);

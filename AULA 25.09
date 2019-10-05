@@ -1,0 +1,184 @@
+// Cangaceiro javascript -> site para visitar
+/* 
+Operadores de igualdade, estrutura condicional, Operadores aritméticos, Operadores de incremento e decremento, Operador de 
+atribuição. 
+
+Ordem de precedência:
+
+1- Parênteses 2- Potências e raízes 3- Multiplicação e divisão 4- Soma e subtração.
+*/
+
+// Comparação de variáveis
+
+let a = 1; // integer
+let b = 1; // integer
+let c = "1"; // string
+let d = 1.0;
+let e = 2;
+let separador = "_____________"; //ignorem este código.
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+// Operadores de igualdade e desigualdade
+// ____________________________________________________________
+// Operador de igualdade
+console.log(separador, "1");
+console.log(a == b); // igualdade
+console.log(a === c); ///idêntico - igualdade estrita
+
+// _____________________________________________________________
+// Operador de desigualdade
+console.log(separador, "2");
+console.log(a != a);  // desigualdade
+console.log(a !== d); // desigualdade estrita
+
+//_______________________________________________________________
+// Operador de comparação (maior que > ) e (menor que < )
+console.log(separador, "3");
+console.log(a < b); // A variável (a) é menor que a variável (b)
+console.log(a > b); //  A variável (a) é maior que a variável (b)
+
+// ________________________________________________________________
+// Maior ou igual a: >= 
+
+console.log(separador, "4");
+console.log(a >= a);  // A variável (a) é maior ou igual à variável (a)
+console.log(a >= b);  // A variável (b) é maior ou igual à variável (b)
+//__________________________________________________________________
+// Menor ou igual a: <=
+
+console.log(separador, "5");
+console.log(a <= a);  // A variável (a) é menor ou igual à variável (a)
+console.log(a <= b);  // A variável (a) é menor ou igual à variável (b)
+
+
+//____________________________________________________________________
+let a = 1; //atribuiu um valor para a variável a
+let b = 2;  // atribuiu um valor para a variável b
+
+// operador de adição (+)
+console.log(a + b); // joga o valor da soma das variáveis (a - b) para o log da página
+
+// operador de subtração (-)
+console.log(a - b);  // joga o valor da subtração das variáveis (a - b) para o log da página
+
+// operador de multiplicação (*)
+console.log(a * b); // joga o valor da multiplicação das variáveis (a - b) para o log da página
+
+// operador de divisão (/)
+
+console.log(a / b); // joga o valor da divisão das variáveis (a / b) para o log da página
+
+//OBS. PESQUISE MAIS OPERADORES ARITMÉTICOS NA DOCUMENTAÇÃO DE JAVASCRIPT
+// Copiem o link à partir do https
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators#operadores_aritmeticos
+
+//______________________________________________________________________
+
+//operador de incremento
+let c = 4;      // dá valor à variável c
+console.log(c); // coloca a variável no log da página
+
+c++;            //incrementou. Agora c == 3
+console.log(c);
+
+// Operador de decremento
+let d = 4;
+console.log(d);
+
+d--; // decremento. Agora d == 3
+console.log(d);
+
+// Operador de atribuição
+let e = 5; // a variável "e" contém 5
+let f = 6; // a variável "f" contém 6
+
+console.log(e);
+console.log(f);
+
+// reatribuir o valor de outra variável
+e = f; // A variável (e), que é igual a 5, recebe o valor de f que é 6, logo a variável (e) recebe o valor 6.
+console.log(e);
+
+// Operador de atribuição de adição
+e += 2;   // A variável (e) que era igual a 6, passou a ser 8 com a atribuição de 2.
+console.log(e);
+
+// Atribuição com resto da divisao
+
+let resto = 10;   // Resto vale 10
+resto %= 2;   // A variável resto recebeu o valor do resto de 2 dividido por 10.
+console.log(resto);
+
+//___________________________________________________________________________
+
+// Estrutura condicional usando evento (alert)
+// alert cria um evento na parte superior da página.
+//if () {}- se () {}
+//else if - senão se () {}
+//else {} - senão {}
+
+//___________________________________________________________________________
+let a = 2; // atribui um valor à variável a
+let b = 1; // atribui um valor à variável b
+
+if (a === b) {    /* se o valor da variável a for idêntico ao valor da variável b ...*/
+ alert("a é igual a b"); // alert - evento - aparece um anúncio   /* ...execute este bloco. */
+} else {          /* senão...*/
+  alert("a é diferente de b");   /* ...execute este bloco.*/
+}
+
+//_____________________________________________________________________________
+// Estrutura if simples
+let c = 1;
+let d = 2;
+
+if (c === b) {    // Se a variável c for idêntica a variável b...
+  alert("O valor de a é idêntico ao valor de b")  // ...execute este comando.
+}
+//______________________________________________________________________________
+// Estrutura if composta
+let e = 1;
+let f = 2;
+let g = 3;
+
+if (e === f) {
+  alert("f é maior que g ");
+} else if (e > f) {
+  alert("e é maior que f");
+} else {
+  alert("condição false");
+}
+
+//Condicional simples
+let c = 5;
+if (c === 4) {
+  document.write(` O valor da variável é 5 `);
+}
+
+// condicional composto
+if (c === 4) {
+  alert(``);
+} else {
+  alert(``);
+}
+
+//___________________________________________________________Aula: 26/09/19
+// condicional sequencial
+
+let e, f, g;
+e = 1;
+f = 2;
+g = 3;
+
+if (e < g) {
+  document.write(` ${e} é menor que ${g} ?`);
+}
+if (f > g) {
+  document.write(` ${f} é maior que ${g} ?`);
+}
+if (c === g) {
+  document.write(`${c} é igual a ${g}`);
+}

@@ -1,0 +1,75 @@
+//Função
+/* Síntaxe da função
+
+function nome(parâmetro) {
+  corpo da função - lógica
+  return
+}
+
+// invocando a função 
+
+nome_da_função()
+
+*/
+/*
+function hello() {
+  return document.write(`Olá, Turma`);
+}
+*/
+/*
+Invacando a função
+hello();
+*/
+/*
+let name = prompt("Digite o seu nome");
+let age = prompt("Digite sua idade");
+
+function sayHello(name, age) {
+  return document.write(`O meu nome é ${name} e tenho ${age} ano(s)`);
+}
+
+sayHello(name, age);
+*/
+
+// Desafio: crie uma função para fazer um cálculo de adição
+
+let n1 = Number(prompt("Insira um número: "));
+let n2 = Number(prompt("Insira outro número: "));
+
+function soma(n1, n2) {
+  return document.write(`${n1} + ${n2} = ${n1 + n2} <br/>`);
+}
+
+function subtracao(n1, n2) {
+  return document.write(`${n1} - ${n2} = ${n1 - n2} <br/>`);
+}
+
+function multiplicacao(n1, n2) {
+  return document.write(`${n1} * ${n2} = ${n1 * n2} <br/>`);
+}
+
+function divisao(n1, n2) {
+  return document.write(`${n1} / ${n2} = ${n1 / n2}`);
+}
+
+soma(n1, n2);
+subtracao(n1, n2);
+multiplicacao(n1, n2);
+divisao(n1, n2);
+
+// UMA FUNÇÃO INVOCANDO A SÍ PRÓPRIO (FUNÇÃO RECURSIVA)
+
+let a, b, c;
+
+a = fatorial(1);
+b = fatorial(2);
+c = fatorial(3);
+function fatorial(n) {
+  if (n == 0 || n == 1) return 1;
+  else return n * fatorial(n - 1);
+}
+
+console.log(fatorial(1));
+console.log(fatorial(2));
+console.log(fatorial(3));
+

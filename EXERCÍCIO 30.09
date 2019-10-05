@@ -1,0 +1,69 @@
+// Crie um algorítmo com for e mostre somente os números pares dentro desde intervalo 0 a 20.
+/*
+let c = 0;
+
+for (c; c <= 20; c++) {
+  if (c % 2 == 0) {
+    document.write(c, "</br>");
+  };
+};
+*/
+
+let c = 0;
+
+while (c != 22) {
+  if (c % 2 == 0) {
+    document.write(`${c} <br/>`);
+  };
+  c++;
+};
+
+// ______________________________________________________________
+
+// Crie um algorítmo com for e mostre somente os números pares dentro desde intervalo 0 a 20.
+/*
+// FOR
+let c = 0;
+
+for (c; c <= 20; c++) {
+  if (c % 2 == 0) {
+    document.write(c, "</br>");
+  }
+}
+*/
+
+/*
+// WHILE
+let c = 0;
+
+while (c != 22) {
+  if (c % 2 == 0) {
+    document.write(`${c} <br/>`);
+  };
+  c++;
+};
+*/
+
+// DO...WHILE
+/*
+Sintaxe do do while
+
+valor_inicial
+do {
+  incremento ou decremento
+}
+while(condição)
+*/
+/*
+let i = 0;
+
+do {
+  if (i % 2 == 0) {
+    document.write(`${i} <br/>`);
+    console.log(i);
+  }
+  i++;
+} while (i <= 20);
+
+*/
+

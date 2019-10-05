@@ -1,0 +1,70 @@
+/*Crie um algoritmo de notas de alunos
+com as seguintes condições
+NOTA1, NOTA2, NOTA3
+
+Média > 8 - APROVADO
+Média >= 6 - RECUPERAÇÃO
+  recuperação >= 6 - APROVADO NA RECUPERAÇÃO
+  recuperação < 6 - REPROVADO NA RECUPERAÇÃO
+Média < 6 - REPROVADO DIRETO (NÃO TE, DIREITO A RECUPERAÇÃO)
+
+*/
+
+/*
+let nota1 = parseFloat(prompt("Digite a primeira nota"));
+let nota2 = parseFloat(prompt("Digite a segunda nota"));
+let nota3 = parseFloat(prompt("Digite a terceira nota"));
+let md = (nota1 + nota2 + nota3) / 3;
+if (md > 8) {
+  alert(`APROVADISSIME`);
+} else if (md >= 6) {
+  alert(`REPROVADE NA RECUPERAÇÃO`);
+} else if (md < 6) {
+  alert(`REPROVADO DIRETO`);
+} else if (md >= 7) {
+  alert(`APROVADE NA RECUPERAÇÃO`);
+}
+
+// ___________________________________
+// crie uma calculadora
+
+let a = Number(prompt("Digite um número"));
+let b = Number(prompt("Digite outro número"));
+let op = parseInt(
+  prompt(
+    "Digite uma opção \n 1 para soma \n 2 para subtração \n 3 para multiplicar \n 4 para dividir \n 5 para potenciação"
+  )
+);
+/*
+switch (op) {
+  case (op = 1):
+    document.write(`${a} + ${b} = ${a + b}`);
+    break;
+  case (op = 2):
+    document.write(`${a} - ${b} = ${a - b}`);
+    break;
+  case (op = 3):
+    document.write(`${a} x ${b} = ${a * b}`);
+    break;
+  case (op = 4):
+    document.write(`${a} / ${b} = ${a / b}`);
+  case (op = 5):
+    document.write(`${a} ^ ${b} = ${a ** b}`);
+}
+
+*/
+
+// Usando o if
+if (op === 1) {
+  document.write(`${a} + ${b} = ${a + b}`);
+} else if (op == 2) {
+  document.write(` ${a} - ${b} = ${a - b}`);
+} else if (op == 3) {
+  document.write(`${a} x ${b} = ${a * b}`);
+} else if (op == 4) {
+  document.write(`${a} / ${b} = ${a / b}`);
+} else if (op == 5) {
+  document.write(`${a} ^ ${b} = ${a ** b}`);
+} else {
+  document.write("Opção inválida!");
+}

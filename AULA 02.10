@@ -1,0 +1,133 @@
+// LINKS DE JAVASCRIPT(estudo)
+
+https://tableless.github.io/iniciantes/manual/js/
+
+https://www.felipefialho.com/blog/o-que-front-end-developers-precisam-saber/
+
+http://www.josejunior.com.br/2019/09/12/boas-praticas-projetos-java/?fbclid=IwAR3zBOfr9qw8gaxYuZezgbUxyUb47fY5Bm5s3jCL10dBzAhkSQQ9ww2BvvA
+
+https://robotlolita.me/topics/
+
+https://developer.mozilla.org/pt-BR/docs/Web/Java/Guide
+
+https://developer.mozilla.org/pt-BR/docs/Web/Java/Reference
+
+https://gist.github.com/vinicius73/60027329a3855345e15b2eeaa3fd588d
+
+https://github.com/gabrieldarezzo/helpjs-ravi
+
+https://braziljs.github.io/eloquente-java/
+
+https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Java/dp/8575226932
+-------------------------------------------------------------------------
+Blogs para estudos
+
+https://willianjusten.com.br/
+
+https://robertoachar.dev/
+
+https://www.felipefialho.com/
+
+https://www.robinwieruch.de/
+
+https://blog.da2k.com.br/
+
+
+// --------------------- EXERCÍCIOS propostos
+
+
+
+//Um quiosque de sorvete vende casquinhas somente nos sabores Chocolate - "C" e morango - "M".
+//Faça um algoritimo para imprimir uma mensagem nas seguintes situações:
+//-- Sorvete de chocolate com mais de três bolas: desconto 10%
+//-- Sorvete de chocolate com qualquer quantidade de bolas: desconto 5%
+//-- Sorvete de morango: desconto 0
+
+// Crie um algorítmo para saber o salário líquido após o desconto do vale-transporte, tendo como referência o salário bruto.
+// Salário bruto é o valor prometido e o salário líquido é o que realmente vai para a carteira
+
+/*
+Crie um algoritmo para saber o salário liquido após o desconto do vale-transporte,
+tendo como referência o salário bruto
+
+https://www.terra.com.br/economia/como-calcular-o-salario-liquido-2015-descontos-inss-e-dependentes,337ef65f17afd963bde750be8134190c6ezrRCRD.html
+
+Para um salário de até R$ 1.399,12, é aplicada a alíquota de 8%. Entre R$ 1.399,13 a R$ 2.331,88, sobe para 9%. E de R$ 2.331,89 a R$ 4.663,75, o percentual de desconto é de 11%.
+No caso de salários superiores a R$ 4.663,75, o cálculo leva em conta este valor, que equivale ao teto de contribuição (R$ 513,01).
+
+rie um algoritmo para saber o salário liquido após o desconto do vale-transporte,
+tendo como referência o salário bruto
+
+/*https://www.terra.com.br/economia/como-calcular-o-salario-liquido-2015-descontos-inss-e-dependentes,337ef65f17afd963bde750be8134190c6ezrRCRD.html*/
+/*
+***Solução do aluno Italo Alves***
+
+let salario = prompt("Qual o seu salário");
+let passagem = prompt("Quanto gasta de passagem");
+
+function desconto(salario, passagem) {
+  let des = salario * 0.6;
+  if (passagem > des) {
+    return `será descontado do seu salário R$ ${salario * 0.06}`;
+  }
+  if (des > passagem) {
+    return `será descontado R$ ${passagem}`;
+  }
+}
+
+document.write(desconto(salario, passagem));
+-------------------------------------------------------------------------------------------
+
+https://www.terra.com.br/economia/como-calcular-o-salario-liquido-2015-descontos-inss-e-dependentes,337ef65f17afd963bde750be8134190c6ezrRCRD.html
+
+Para um salário de até R$ 1.399,12, é aplicada a alíquota de 8%. Entre R$ 1.399,13 a R$ 2.331,88, sobe para 9%. E de R$ 2.331,89 a R$ 4.663,75, o percentual de desconto é de 11%.
+No caso de salários superiores a R$ 4.663,75, o cálculo leva em conta este valor, que equivale ao teto de contribuição (R$ 513,01).
+-----------------------------------------------------------------------------
+let sorvete = prompt("Digite C ou M:");
+
+if (sorvete == "C") {
+  let bolas = prompt("Digite a quantidade de bolas:");
+  if (bolas > 3) {
+    document.write("O desconto será de 10%!");
+  } else {
+    document.write("O desconto será de 5%!");
+  }
+}
+if (sorvete == "M") {
+  document.write("Não haverá desconto!");
+}
+if (sorvete != "C" && sorvete != "M") {
+  document.write(
+    "Opção inválida! - Favor escolher entre: chocolate ou morango!"
+  );
+}
+
+-----------------------------------------------------------------------------
+let sorvete = prompt("Digite C ou M:");
+
+if (sorvete == "C") {
+  let bolas = prompt("Digite a quantidade de bolas:");
+  if (bolas > 3) {
+    document.write("O desconto será de 10%!");
+  } else {
+    document.write("O desconto será de 5%!");
+  }
+}
+if (sorvete == "M") {
+  document.write("Não haverá desconto!");
+}
+if (sorvete != "C" && sorvete != "M") {
+  document.write(
+    "Opção inválida! - Favor escolher entre: chocolate ou morango!"
+  );
+}
+
+//****************************************************** CRIANDO UMA FUNÇÃO PARA CÁLCULO DE PORCENTAGEM
+let num = Number(prompt("Insira um número: "));
+
+function percentual(x) {
+  return console.log(x * 0.1);
+}
+
+percentual(num); 
+

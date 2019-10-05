@@ -1,0 +1,40 @@
+// crie um algorítmo que diminua 10% do valor que o usuário digitar
+
+let op = parseInt(
+  prompt(
+    "Qual operação você deseja fazer? [1] Acréscimo ou desconto de juros <br/> [2] Cálculo básico"
+  )
+);
+
+// criando uma condição para
+switch (op) {
+  // ################### PORCENTUAL DO ACRÉSCIMO
+  case (op = 1): // SELECIONAR UMA OPÇÃO DE ACORDO COM A NECESSIDADE
+    let num = Number(
+      prompt("Insira o valor que você deseja para fazer essa operação")
+    ); // NÚMERO USADO PARA FAZER A OPERAÇÃO
+    let opcao2 = parseInt(prompt("[1] p/ acréscimo [2] p/ desconto")); // SELECIONA UMA OPÇÃO DE ACORDO COM A NECESSIDADE.
+
+    // ******************************** CASO O USUÁRIO ESCOLHA A OPÇÃO 1
+    switch (opcao2) {
+      case (opcao2 = 1):
+        function percentualAcrescimo(x) {
+          return console.log(x + (x * percent) / 100);
+        }
+        let percent = parseFloat(prompt("Quantos % você quer acrescentar?"));
+        percentualAcrescimo(num, percent);
+        break;
+
+      // *************************** CASO O USUÁRIO ESCOLHA A OPÇÃO 2
+      case (opcao2 = 2):
+        function percentualDesconto(x) {
+          return console.log(x - (x * percent2) / 100);
+        }
+        let percent2 = Number(prompt("Quantos % você quer descontar?"));
+        percentualDesconto(num, percent2);
+        break;
+
+      default:
+        console.log("Opção inválida!");
+    }
+}

@@ -1,0 +1,76 @@
+
+let separador = "--------------";
+//----------------
+console.log(separador, "0");    // 
+let a = 1;
+console.log(a); // 1
+console.log(typeof a); // Number
+
+//----------------
+console.log(separador, "1");
+let b = parseInt(2);
+console.log(b); // 2
+console.log(typeof b); // Number
+
+//-----------------
+console.log(separador, "2");
+let c = parseInt(2.5); // Ignora os números decimais
+console.log(c); // 2
+console.log(typeof c); // Number
+
+//------------------
+console.log(separador, "3");
+let d = parseFloat(2.5); // Permite números decimais
+console.log(d);         // 2.5
+console.log(typeof d); // Number
+
+//------------------
+console.log(separador, "4");
+let e = parseFloat("Testando...");
+console.log(e); // NOT a NUMBER (NaN)
+console.log(typeof e); //  Number
+
+//------------------
+// Obs: Pesquisar comandos com a primeira letra maiúscula no início
+
+console.log(separador, "5");
+let f = 2 > 1;
+console.log(f);
+console.log(typeof f);
+
+//-------------------
+console.log(separador, "6");
+let g = Number(10); // Permite nº̣ reais
+console.log(g); // 10
+console.log(typeof g); // Number
+//--------------------
+
+console.log(separador, "7");
+let h = Number(-10); // -10
+console.log(h); // Number
+console.log(typeof h);
+
+// Obs: Pegar o typeof das variáveis acima
+
+console.log(separador, "8");
+let i = 2 > 1;
+console.log(i);
+console.log(typeof i);
+
+//----------------------
+console.log(separador, "9");
+let j = 2 > 1 && 3 < 5;   // true && true
+console.log(j);           // true
+console.log(typeof j);    // boolean
+
+//------------------------
+console.log(separador, "10"); 
+let k = 2 < 1 && 3 < 2; // false && true  && simboliza o "and"
+console.log(k);         // false
+console.log(typeof k);  // boolean
+
+//-------------------------
+console.log(separador, "11");
+let l = 2 < 1 || 3 < 5;   // false || true
+console.log(l);           // true
+console.log(typeof l); // || simbolida o "or"

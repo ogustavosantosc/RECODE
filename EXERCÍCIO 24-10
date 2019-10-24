@@ -1,0 +1,52 @@
+//REVISÃO
+
+/*01 - Declarar variáveis */
+
+var a = 1;
+let b = 2;
+const c = 3;
+
+document.write(`${a} <br/>`);
+document.write(`${b} <br/>`);
+document.write(`${c} <br/>`);
+
+/*02 Exempliqfique declarações TEMPORAL DEAD ZONE */
+
+console.log(d);
+var d = "Temporal Dead Zone - VAR";
+
+console.log(e);
+let e = "Temporal Dead Zone - LET";
+
+/* invocando a variável antes da declaração
+
+undefined ou Uncautght SyntaxError: Indentifier "e" has already been declared HOSTING - jogará as variaveis para cima da estrutura*/
+
+/*03 - Declare operadores arismáticas */
+
+document.write(`ADIÇÃO - ${a + b} <br/>`);
+document.write(`DIVISÃO - ${a / b} <br/>`);
+document.write(`SUBTRAÇÃO - ${a - b} <br/>`);
+document.write(`MULTIPLICAÇÃO - ${a * b} <br/>`);
+
+/*04 - Declare operadores incremento e decremento */
+
+let c = 4;
+document.write(`VALOR INICIAL - ${c} <br/>`);
+
+c++;
+document.write(`INCREMENTO - ${c} <br/>`);
+
+c--;
+document.write(`DECREMENTO - ${c} <br/>`);
+
+c--;
+document.write(`DECREMENTO - ${c} <br/>`);
+
+/*06 - Declare os operadores lógicos */
+
+if (a > b) {
+  console.log("A maior que B");
+} else {
+  console.log("B maior que A");
+}
